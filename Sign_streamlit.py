@@ -24,7 +24,7 @@ def process_image(image_path):
 def fetch_text(img):
     # Replace this with your actual text fetching logic
     x=np.array(img)
-    model = load_model('model_sign_language.h5')
+    model = load_model('https://drive.google.com/file/d/1mLNfBu6hiqFy7XTQWbV8jOOr3vLhghso/view?usp=sharing')
     p=model.predict(img)
     pi=np.argmax(p, axis=1)
     l=pi[0]
